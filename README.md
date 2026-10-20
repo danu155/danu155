@@ -143,6 +143,5 @@ status  : We work in the dark to serve the light
 
 <br/><br/>
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:000000,50:8B0000,100:000000&height=130&section=footer&text=Nothing%20is%20true.%20Everything%20is%20permitted.&fontSize=22&fontColor=C1121F&animation=fadeIn" width="100%" alt="footer"/>
 
 </div>
