@@ -148,6 +148,4 @@ $ ssh danu@contact
 
 <br/>
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:05070A,50:0D1117,100:05070A&height=120&section=footer&text=Learn.%20Hack.%20Defend.&fontSize=22&fontColor=00FF9C&animation=fadeIn" width="100%" alt="footer"/>
-
 </div>
