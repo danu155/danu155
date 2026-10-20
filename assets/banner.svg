@@ -1,62 +1,89 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="320" viewBox="0 0 1200 320" fill="none" role="img" aria-label="DANU155 - Nothing is true, everything is permitted">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360" fill="none" role="img" aria-label="danu@kali terminal">
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#050505"/>
-      <stop offset="0.5" stop-color="#14070B"/>
-      <stop offset="1" stop-color="#050505"/>
+    <linearGradient id="win" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0D1117"/>
+      <stop offset="1" stop-color="#0A0E14"/>
     </linearGradient>
 
-    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
-      <stop offset="0" stop-color="#C1121F" stop-opacity="0.60"/>
-      <stop offset="1" stop-color="#C1121F" stop-opacity="0"/>
-    </radialGradient>
-
-    <linearGradient id="emblemFill" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#FF3B4E"/>
-      <stop offset="1" stop-color="#6E0910"/>
+    <linearGradient id="shield" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#00FF9C"/>
+      <stop offset="1" stop-color="#00875A"/>
     </linearGradient>
 
-    <linearGradient id="rule" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#C1121F"/>
-      <stop offset="1" stop-color="#C1121F" stop-opacity="0"/>
+    <linearGradient id="scan" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#00FF9C" stop-opacity="0.10"/>
+      <stop offset="1" stop-color="#00FF9C" stop-opacity="0"/>
     </linearGradient>
 
-    <pattern id="hatch" width="18" height="18" patternUnits="userSpaceOnUse" patternTransform="rotate(35)">
-      <line x1="0" y1="0" x2="0" y2="18" stroke="#C1121F" stroke-opacity="0.08" stroke-width="1"/>
-    </pattern>
-
-    <g id="creed">
-      <path d="M50 2 L96 122 L70 122 L50 66 L30 122 L4 122 Z"/>
-      <path d="M50 66 L64 114 L50 150 L36 114 Z"/>
-    </g>
+    <filter id="soft" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="14" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
   </defs>
 
-  <rect width="1200" height="320" fill="url(#bg)"/>
-  <rect width="1200" height="320" fill="url(#hatch)"/>
+  <rect width="1200" height="360" fill="#05070A"/>
 
-  <g opacity="0.9">
-    <ellipse cx="160" cy="160" rx="270" ry="210" fill="url(#glow)">
-      <animate attributeName="opacity" values="0.75;1;0.75" dur="6s" repeatCount="indefinite"/>
-    </ellipse>
+  <!-- window -->
+  <rect x="16" y="16" width="1168" height="328" rx="12" fill="url(#win)" stroke="#30363D" stroke-width="1.5"/>
+
+  <!-- title bar -->
+  <path d="M16 28 a12 12 0 0 1 12 -12 h1144 a12 12 0 0 1 12 12 v28 h-1168 z" fill="#161B22"/>
+  <line x1="16" y1="56" x2="1184" y2="56" stroke="#30363D" stroke-width="1.5"/>
+
+  <circle cx="46" cy="36" r="6.5" fill="#FF5F56"/>
+  <circle cx="70" cy="36" r="6.5" fill="#FFBD2E"/>
+  <circle cx="94" cy="36" r="6.5" fill="#27C93F"/>
+
+  <text x="600" y="41" text-anchor="middle" font-family="Consolas, Menlo, 'DejaVu Sans Mono', monospace" font-size="13.5" fill="#8B949E">danu@kali: ~/profile</text>
+
+  <!-- subtle top glow inside window -->
+  <rect x="17" y="57" width="1166" height="90" fill="url(#scan)"/>
+
+  <!-- logo: shield + keyhole -->
+  <g filter="url(#soft)" opacity="0.95">
+    <path d="M80 118 H200 V188 C200 240 172 268 140 282 C108 268 80 240 80 188 Z" fill="url(#shield)"/>
+  </g>
+  <path d="M140 138 m-13 0 a13 13 0 1 0 26 0 a13 13 0 1 0 -26 0" fill="#05100B"/>
+  <path d="M133 148 h14 l5 40 h-24 z" fill="#05100B"/>
+
+  <!-- whoami -->
+  <text x="290" y="120" font-family="Consolas, Menlo, 'DejaVu Sans Mono', monospace" font-size="23" font-weight="700" fill="#00FF9C">danu@kali</text>
+  <line x1="290" y1="138" x2="470" y2="138" stroke="#30363D" stroke-width="2"/>
+
+  <!-- neofetch style info -->
+  <g font-family="Consolas, Menlo, 'DejaVu Sans Mono', monospace" font-size="15.5">
+    <text x="290" y="172" fill="#00C97B">OS</text>
+    <text x="400" y="172" fill="#C9D1D9">Kali GNU/Linux</text>
+
+    <text x="290" y="200" fill="#00C97B">Role</text>
+    <text x="400" y="200" fill="#C9D1D9">Network &#38; Cyber Security</text>
+
+    <text x="290" y="228" fill="#00C97B">Order</text>
+    <text x="400" y="228" fill="#C9D1D9">SIJA &#183; SMKN 7 Semarang</text>
+
+    <text x="290" y="256" fill="#00C97B">Focus</text>
+    <text x="400" y="256" fill="#C9D1D9">Penetration Testing</text>
+
+    <text x="290" y="284" fill="#00C97B">Creed</text>
+    <text x="400" y="284" fill="#C9D1D9">Learn. Hack. Defend.</text>
   </g>
 
-  <g transform="translate(1000 36) scale(1.55)" fill="url(#emblemFill)" opacity="0.13">
-    <use href="#creed"/>
+  <!-- prompt line -->
+  <text x="60" y="322" font-family="Consolas, Menlo, 'DejaVu Sans Mono', monospace" font-size="17" fill="#00FF9C">danu@kali:~$</text>
+  <text x="196" y="322" font-family="Consolas, Menlo, 'DejaVu Sans Mono', monospace" font-size="17" fill="#C9D1D9">sudo apt install success</text>
+  <rect x="410" y="307" width="11" height="19" fill="#00FF9C">
+    <animate attributeName="opacity" values="1;1;0;0" dur="1.15s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- right side: faint matrix-ish dots -->
+  <g fill="#00FF9C" opacity="0.18">
+    <circle cx="1080" cy="120" r="2.5"/><circle cx="1120" cy="150" r="2.5"/>
+    <circle cx="1050" cy="185" r="2.5"/><circle cx="1130" cy="205" r="2.5"/>
+    <circle cx="1090" cy="240" r="2.5"/><circle cx="1060" cy="275" r="2.5"/>
+    <circle cx="1125" cy="285" r="2.5"/><circle cx="1005" cy="130" r="2.5"/>
+    <circle cx="1150" cy="115" r="2.5"/><circle cx="1015" cy="255" r="2.5"/>
   </g>
-
-  <g transform="translate(96 68) scale(1.22)" fill="url(#emblemFill)">
-    <use href="#creed"/>
-  </g>
-
-  <line x1="0" y1="0" x2="1200" y2="0" stroke="#C1121F" stroke-opacity="0.55" stroke-width="2"/>
-
-  <text x="268" y="146" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="66" font-weight="700" letter-spacing="9" fill="#F7F7F7">DANU155</text>
-
-  <line x1="272" y1="176" x2="880" y2="176" stroke="url(#rule)" stroke-width="2"/>
-
-  <text x="270" y="212" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="17" font-weight="600" letter-spacing="4.2" fill="#C1121F">NOTHING IS TRUE &#183; EVERYTHING IS PERMITTED</text>
-
-  <text x="270" y="252" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="14" font-weight="500" letter-spacing="2.6" fill="#8A8A8A">PENETRATION TESTING &#183; CTF PLAYER &#183; NETWORK SECURITY</text>
-
-  <line x1="0" y1="318" x2="1200" y2="318" stroke="#C1121F" stroke-opacity="0.55" stroke-width="2"/>
 </svg>
