@@ -1,7 +1,5 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:000000,50:8B0000,100:000000&height=210&section=header&text=DANU155&fontSize=68&fontColor=ffffff&fontAlignY=36&animation=fadeIn" width="100%" alt="header"/>
-
 <a href="https://github.com/danu155">
   <img src="assets/banner.svg" width="100%" alt="DANU155 - Nothing is true, everything is permitted"/>
 </a>
