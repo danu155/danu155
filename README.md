@@ -16,3 +16,7 @@
 ---
 
 ### 🗡️ Codename
+Name : Danu
+Order : SMK Negeri 7 Semarang (SIJA)
+Mission : Become a Penetration Tester
+Creed : Learn. Hack. Defend.
