@@ -24,15 +24,15 @@
 <tr>
 <td valign="top" width="50%">
 
-```yaml
+<pre>
 name    : Danu
 alias   : danu155
 order   : SMK Negeri 7 Semarang (SIJA)
-role    : Network & Cyber Security Enthusiast
+role    : Network &amp; Cyber Security Enthusiast
 mission : Become a Penetration Tester
 creed   : Learn. Hack. Defend.
 status  : We work in the dark to serve the light
-```
+</pre>
 
 </td>
 <td valign="top" width="50%">
