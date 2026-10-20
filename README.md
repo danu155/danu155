@@ -1,6 +1,6 @@
-<div align="center">
+﻿<div align="center">
 
-<img src="assets/banner.svg" width="100%" alt="danu155 — Network & Cyber Security"/>
+<img src="assets/banner.svg" width="100%" alt="danu155 â€” Network & Cyber Security"/>
 
 <br/>
 
@@ -8,15 +8,15 @@
 
 <br/>
 
-<img src="https://img.shields.io/badge/OPEN%20TO%20INTERNSHIP-22C55E?style=for-the-badge&labelColor=0B1220" alt="open to internship"/>
-<img src="https://img.shields.io/badge/KALI%20LINUX-7DD3FC?style=for-the-badge&labelColor=0B1220&logo=kalilinux&logoColor=7DD3FC" alt="kali"/>
-<img src="https://img.shields.io/badge/SIJA%20%C2%B7%20SMKN%207%20SEMARANG-A855F7?style=for-the-badge&labelColor=0B1220" alt="sija"/>
+<img src="https://img.shields.io/badge/OPEN%20TO%20INTERNSHIP-22C55E?style=for-the-badge&labelColor=0A0C11" alt="open to internship"/>
+<img src="https://img.shields.io/badge/KALI%20LINUX-7DD3FC?style=for-the-badge&labelColor=0A0C11&logo=kalilinux&logoColor=7DD3FC" alt="kali"/>
+<img src="https://img.shields.io/badge/SIJA%20%C2%B7%20SMKN%207%20SEMARANG-A855F7?style=for-the-badge&labelColor=0A0C11" alt="sija"/>
 
 </div>
 
 ---
 
-## 🛠 &nbsp;Tech Stack
+## ðŸ›  &nbsp;Tech Stack
 
 <div align="center">
 
@@ -24,20 +24,20 @@
 
 <br/><br/>
 
-<img src="https://img.shields.io/badge/Wireshark-0B1220?style=for-the-badge&logo=wireshark&logoColor=7DD3FC" alt="wireshark"/>
-<img src="https://img.shields.io/badge/Nmap-0B1220?style=for-the-badge&logo=nmap&logoColor=7DD3FC" alt="nmap"/>
-<img src="https://img.shields.io/badge/Burp%20Suite-0B1220?style=for-the-badge&logo=burpsuite&logoColor=7DD3FC" alt="burp"/>
-<img src="https://img.shields.io/badge/Metasploit-0B1220?style=for-the-badge&logo=metasploit&logoColor=7DD3FC" alt="metasploit"/>
-<img src="https://img.shields.io/badge/Ghidra-0B1220?style=for-the-badge&logo=ghidra&logoColor=7DD3FC" alt="ghidra"/>
-<img src="https://img.shields.io/badge/Cisco%20Packet%20Tracer-0B1220?style=for-the-badge&logo=cisco&logoColor=7DD3FC" alt="cisco"/>
-<img src="https://img.shields.io/badge/OpenVPN-0B1220?style=for-the-badge&logo=openvpn&logoColor=7DD3FC" alt="openvpn"/>
-<img src="https://img.shields.io/badge/VirtualBox-0B1220?style=for-the-badge&logo=virtualbox&logoColor=7DD3FC" alt="virtualbox"/>
+<img src="https://img.shields.io/badge/Wireshark-0A0C11?style=for-the-badge&logo=wireshark&logoColor=7DD3FC" alt="wireshark"/>
+<img src="https://img.shields.io/badge/Nmap-0A0C11?style=for-the-badge&logo=nmap&logoColor=7DD3FC" alt="nmap"/>
+<img src="https://img.shields.io/badge/Burp%20Suite-0A0C11?style=for-the-badge&logo=burpsuite&logoColor=7DD3FC" alt="burp"/>
+<img src="https://img.shields.io/badge/Metasploit-0A0C11?style=for-the-badge&logo=metasploit&logoColor=7DD3FC" alt="metasploit"/>
+<img src="https://img.shields.io/badge/Ghidra-0A0C11?style=for-the-badge&logo=ghidra&logoColor=7DD3FC" alt="ghidra"/>
+<img src="https://img.shields.io/badge/Cisco%20Packet%20Tracer-0A0C11?style=for-the-badge&logo=cisco&logoColor=7DD3FC" alt="cisco"/>
+<img src="https://img.shields.io/badge/OpenVPN-0A0C11?style=for-the-badge&logo=openvpn&logoColor=7DD3FC" alt="openvpn"/>
+<img src="https://img.shields.io/badge/VirtualBox-0A0C11?style=for-the-badge&logo=virtualbox&logoColor=7DD3FC" alt="virtualbox"/>
 
 </div>
 
 ---
 
-## 📊 &nbsp;GitHub Analytics
+## ðŸ“Š &nbsp;GitHub Analytics
 
 <div align="center">
 
@@ -46,17 +46,17 @@
 
 <br/>
 
-<img width="98%" src="https://streak-stats.demolab.com?user=danu155&hide_border=true&background=0B1220&stroke=7DD3FC&ring=A855F7&fire=22D3EE&currStreakLabel=7DD3FC&currStreakNum=FFFFFF&sideNums=CBD5E1&sideLabels=64748B&dates=475569&border_radius=18" alt="streak"/>
+<img width="98%" src="https://streak-stats.demolab.com?user=danu155&hide_border=true&background=0A0C11&stroke=7DD3FC&ring=A855F7&fire=22D3EE&currStreakLabel=7DD3FC&currStreakNum=FFFFFF&sideNums=CBD5E1&sideLabels=64748B&dates=475569&border_radius=18" alt="streak"/>
 
 <br/>
 
-<img width="98%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=danu155&layout=compact&langs_count=8&hide_border=true&bg_color=0B1220&title_color=7DD3FC&text_color=CBD5E1&border_radius=18" alt="top languages"/>
+<img width="98%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=danu155&layout=compact&langs_count=8&hide_border=true&bg_color=0A0C11&title_color=7DD3FC&text_color=CBD5E1&border_radius=18" alt="top languages"/>
 
 </div>
 
 ---
 
-## 🐍 &nbsp;Contribution Snake
+## ðŸ &nbsp;Contribution Snake
 
 <div align="center">
 
@@ -70,22 +70,22 @@
 
 ---
 
-## 🌐 &nbsp;Connect
+## ðŸŒ &nbsp;Connect
 
 <div align="center">
 
 <a href="mailto:lukasdanu4@gmail.com">
-  <img src="https://img.shields.io/badge/Gmail-0B1220?style=for-the-badge&logo=gmail&logoColor=7DD3FC" alt="gmail"/>
+  <img src="https://img.shields.io/badge/Gmail-0A0C11?style=for-the-badge&logo=gmail&logoColor=7DD3FC" alt="gmail"/>
 </a>
 <a href="https://github.com/danu155">
-  <img src="https://img.shields.io/badge/GitHub-0B1220?style=for-the-badge&logo=github&logoColor=7DD3FC" alt="github"/>
+  <img src="https://img.shields.io/badge/GitHub-0A0C11?style=for-the-badge&logo=github&logoColor=7DD3FC" alt="github"/>
 </a>
 <a href="https://github.com/danu155?tab=repositories">
-  <img src="https://img.shields.io/badge/Repositories-0B1220?style=for-the-badge&logo=gitbook&logoColor=7DD3FC" alt="repositories"/>
+  <img src="https://img.shields.io/badge/Repositories-0A0C11?style=for-the-badge&logo=gitbook&logoColor=7DD3FC" alt="repositories"/>
 </a>
 
 <br/><br/>
 
-<img src="https://komarev.com/ghpvc/?username=danu155&style=for-the-badge&color=7DD3FC&labelColor=0B1220&label=PROFILE+VISITORS" alt="visitors"/>
+<img src="https://komarev.com/ghpvc/?username=danu155&style=for-the-badge&color=7DD3FC&labelColor=0A0C11&label=PROFILE+VISITORS" alt="visitors"/>
 
 </div>

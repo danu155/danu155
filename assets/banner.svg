@@ -1,161 +1,186 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="420" viewBox="0 0 1200 420" fill="none" role="img" aria-label="danu155 - Network and Cyber Security">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="430" viewBox="0 0 1200 430" fill="none" role="img" aria-label="danu155 — Network and Cyber Security">
   <defs>
-    <!-- background mesh -->
-    <linearGradient id="base" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#070B14"/>
-      <stop offset="0.45" stop-color="#0B1220"/>
-      <stop offset="1" stop-color="#05070D"/>
+    <linearGradient id="bgBase" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#08090C"/>
+      <stop offset="0.5" stop-color="#0C0E13"/>
+      <stop offset="1" stop-color="#060709"/>
     </linearGradient>
 
-    <!-- neon orbs -->
-    <radialGradient id="orbA" cx="0.5" cy="0.5" r="0.5">
-      <stop offset="0" stop-color="#00F2FE" stop-opacity="0.55"/>
-      <stop offset="0.55" stop-color="#0EA5E9" stop-opacity="0.18"/>
+    <radialGradient id="glowCyan" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#38BDF8" stop-opacity="0.42"/>
+      <stop offset="0.6" stop-color="#0EA5E9" stop-opacity="0.10"/>
       <stop offset="1" stop-color="#0EA5E9" stop-opacity="0"/>
     </radialGradient>
 
-    <radialGradient id="orbB" cx="0.5" cy="0.5" r="0.5">
-      <stop offset="0" stop-color="#A855F7" stop-opacity="0.50"/>
-      <stop offset="0.55" stop-color="#7C3AED" stop-opacity="0.16"/>
-      <stop offset="1" stop-color="#7C3AED" stop-opacity="0"/>
+    <radialGradient id="glowViolet" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#8B5CF6" stop-opacity="0.40"/>
+      <stop offset="0.6" stop-color="#6D28D9" stop-opacity="0.10"/>
+      <stop offset="1" stop-color="#6D28D9" stop-opacity="0"/>
     </radialGradient>
 
-    <radialGradient id="orbC" cx="0.5" cy="0.5" r="0.5">
-      <stop offset="0" stop-color="#22D3EE" stop-opacity="0.30"/>
-      <stop offset="1" stop-color="#22D3EE" stop-opacity="0"/>
-    </radialGradient>
-
-    <!-- glass card -->
+    <!-- glass surface: from-white/[0.07] via-white/[0.02] to-white/[0.05] -->
     <linearGradient id="glass" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.09"/>
-      <stop offset="0.5" stop-color="#FFFFFF" stop-opacity="0.035"/>
-      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0.07"/>
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.075"/>
+      <stop offset="0.5" stop-color="#FFFFFF" stop-opacity="0.022"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0.055"/>
     </linearGradient>
 
-    <linearGradient id="edge" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#7DD3FC" stop-opacity="0.85"/>
-      <stop offset="0.45" stop-color="#FFFFFF" stop-opacity="0.10"/>
-      <stop offset="1" stop-color="#A855F7" stop-opacity="0.70"/>
+    <!-- top sheen: from-white/[0.06] via-transparent -->
+    <linearGradient id="sheen" x1="0" y1="0" x2="0.6" y2="1">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.065"/>
+      <stop offset="0.7" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- border: border-border/50 → subtle light rim -->
+    <linearGradient id="rim" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.30"/>
+      <stop offset="0.35" stop-color="#FFFFFF" stop-opacity="0.06"/>
+      <stop offset="0.7" stop-color="#FFFFFF" stop-opacity="0.05"/>
+      <stop offset="1" stop-color="#8B5CF6" stop-opacity="0.30"/>
     </linearGradient>
 
     <linearGradient id="nameGrad" x1="0" y1="0" x2="1" y2="0">
       <stop offset="0" stop-color="#FFFFFF"/>
-      <stop offset="0.55" stop-color="#7DD3FC"/>
-      <stop offset="1" stop-color="#A855F7"/>
+      <stop offset="0.5" stop-color="#E0F2FE"/>
+      <stop offset="1" stop-color="#A5B4FC"/>
     </linearGradient>
 
-    <linearGradient id="ruleGrad" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#22D3EE" stop-opacity="0.9"/>
-      <stop offset="1" stop-color="#22D3EE" stop-opacity="0"/>
+    <linearGradient id="ring" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#38BDF8"/>
+      <stop offset="1" stop-color="#8B5CF6"/>
     </linearGradient>
 
-    <filter id="blurA" x="-60%" y="-60%" width="220%" height="220%">
-      <feGaussianBlur stdDeviation="70"/>
+    <linearGradient id="barGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#38BDF8"/>
+      <stop offset="1" stop-color="#8B5CF6"/>
+    </linearGradient>
+
+    <!-- shadow-[0_25px_60px_rgba(0,0,0,0.6)] -->
+    <filter id="cardShadow" x="-15%" y="-25%" width="130%" height="160%">
+      <feDropShadow dx="0" dy="18" stdDeviation="22" flood-color="#000000" flood-opacity="0.65"/>
     </filter>
-    <filter id="blurB" x="-60%" y="-60%" width="220%" height="220%">
-      <feGaussianBlur stdDeviation="55"/>
+
+    <filter id="blurHeavy" x="-70%" y="-70%" width="240%" height="240%">
+      <feGaussianBlur stdDeviation="64"/>
     </filter>
-    <filter id="neon" x="-40%" y="-40%" width="180%" height="180%">
-      <feGaussianBlur stdDeviation="7" result="b"/>
+
+    <filter id="glowSoft" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="10" result="b"/>
       <feMerge>
         <feMergeNode in="b"/>
         <feMergeNode in="SourceGraphic"/>
       </feMerge>
     </filter>
 
-    <pattern id="grid" width="34" height="34" patternUnits="userSpaceOnUse">
-      <path d="M34 0 H0 V34" fill="none" stroke="#7DD3FC" stroke-opacity="0.055" stroke-width="1"/>
-    </pattern>
-
-    <!-- avatar ring gradient -->
-    <linearGradient id="ring" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#22D3EE"/>
-      <stop offset="0.5" stop-color="#7DD3FC"/>
-      <stop offset="1" stop-color="#A855F7"/>
-    </linearGradient>
-
-    <clipPath id="avatarClip">
-      <circle cx="132" cy="196" r="56"/>
-    </clipPath>
+    <clipPath id="avatarClip"><circle cx="126" cy="200" r="52"/></clipPath>
+    <clipPath id="cardClip"><rect x="24" y="24" width="1152" height="382" rx="28"/></clipPath>
   </defs>
 
-  <!-- ===== background ===== -->
-  <rect width="1200" height="420" fill="url(#base)"/>
-  <rect width="1200" height="420" fill="url(#grid)"/>
+  <!-- ===== canvas ===== -->
+  <rect width="1200" height="430" fill="url(#bgBase)"/>
 
-  <!-- neon orbs (blurred) -->
-  <g filter="url(#blurA)">
-    <ellipse cx="180" cy="80" rx="300" ry="220" fill="url(#orbA)"/>
-    <ellipse cx="1010" cy="340" rx="320" ry="240" fill="url(#orbB)"/>
-    <ellipse cx="620" cy="400" rx="260" ry="150" fill="url(#orbC)"/>
+  <!-- ambient glows -->
+  <g filter="url(#blurHeavy)">
+    <ellipse cx="150" cy="60" rx="330" ry="230" fill="url(#glowCyan)"/>
+    <ellipse cx="1060" cy="380" rx="340" ry="240" fill="url(#glowViolet)"/>
   </g>
 
   <!-- ===== glass card ===== -->
-  <rect x="28" y="28" width="1144" height="364" rx="26" fill="url(#glass)" stroke="url(#edge)" stroke-width="1.4"/>
+  <g filter="url(#cardShadow)">
+    <rect x="24" y="24" width="1152" height="382" rx="28" fill="url(#glass)" stroke="url(#rim)" stroke-width="1.2"/>
+  </g>
 
-  <!-- inner top sheen -->
-  <path d="M54 30 H1146 a24 24 0 0 1 24 24 v26 H30 v-26 a24 24 0 0 1 24 -24 z" fill="#FFFFFF" opacity="0.035"/>
+  <g clip-path="url(#cardClip)">
+    <!-- top sheen -->
+    <path d="M24 52 a28 28 0 0 1 28 -28 h1096 a28 28 0 0 1 28 28 v52 H24 z" fill="url(#sheen)"/>
+    <!-- primary glow behind avatar (from-primary/15 blur-3xl) -->
+    <ellipse cx="130" cy="200" rx="150" ry="120" fill="#38BDF8" opacity="0.16" filter="url(#blurHeavy)"/>
+  </g>
 
   <!-- ===== avatar ===== -->
-  <circle cx="132" cy="196" r="64" fill="#0B1220" opacity="0.85"/>
-  <circle cx="132" cy="196" r="62" fill="none" stroke="url(#ring)" stroke-width="2.5" opacity="0.95"/>
-  <image href="https://avatars.githubusercontent.com/u/186253953?v=4" x="76" y="140" width="112" height="112" clip-path="url(#avatarClip)" preserveAspectRatio="xMidYMid slice"/>
-  <!-- online dot -->
-  <circle cx="172" cy="238" r="11" fill="#0B1220"/>
-  <circle cx="172" cy="238" r="7" fill="#22C55E">
-    <animate attributeName="opacity" values="1;0.35;1" dur="2.4s" repeatCount="indefinite"/>
+  <circle cx="126" cy="200" r="58" fill="#0B0D12" opacity="0.9"/>
+  <circle cx="126" cy="200" r="56" fill="none" stroke="url(#ring)" stroke-width="1.8" opacity="0.85"/>
+  <image href="https://avatars.githubusercontent.com/u/186253953?v=4" x="74" y="148" width="104" height="104" clip-path="url(#avatarClip)" preserveAspectRatio="xMidYMid slice"/>
+
+  <!-- status pill under avatar -->
+  <rect x="76" y="268" width="100" height="26" rx="13" fill="#22C55E" fill-opacity="0.10" stroke="#22C55E" stroke-opacity="0.40" stroke-width="1"/>
+  <circle cx="93" cy="281" r="3.5" fill="#22C55E">
+    <animate attributeName="opacity" values="1;0.3;1" dur="2.2s" repeatCount="indefinite"/>
   </circle>
+  <text x="104" y="285" font-family="Segoe UI, Arial, sans-serif" font-size="10.5" font-weight="700" letter-spacing="1.1" fill="#4ADE80">ONLINE</text>
 
-  <!-- ===== name ===== -->
-  <text x="228" y="128" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="52" font-weight="700" letter-spacing="1.2" fill="url(#nameGrad)">danu155</text>
+  <!-- ===== name block ===== -->
+  <text x="218" y="132" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="46" font-weight="700" letter-spacing="-0.5" fill="url(#nameGrad)">danu155</text>
 
-  <!-- handle / role line -->
-  <text x="230" y="160" font-family="Consolas, Menlo, monospace" font-size="15" fill="#7DD3FC" opacity="0.95">@danu — Network &amp; Cyber Security</text>
+  <text x="220" y="160" font-family="Consolas, Menlo, monospace" font-size="13.5" letter-spacing="0.4" fill="#7DD3FC" opacity="0.9">Network &amp; Cyber Security · SIJA SMKN 7 Semarang</text>
 
-  <line x1="230" y1="176" x2="560" y2="176" stroke="url(#ruleGrad)" stroke-width="1.6"/>
+  <!-- subtle divider -->
+  <line x1="220" y1="178" x2="600" y2="178" stroke="#FFFFFF" stroke-opacity="0.10" stroke-width="1"/>
 
-  <!-- bio -->
-  <text x="230" y="204" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="15.5" fill="#94A3B8">SIJA · SMKN 7 Semarang</text>
-  <text x="230" y="230" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="15.5" fill="#94A3B8">Focus: Penetration Testing · CTF Player</text>
-
-  <!-- ===== stat pills ===== -->
-  <g font-family="Consolas, Menlo, monospace" font-size="12.5" font-weight="600">
-    <!-- pill 1 -->
-    <rect x="230" y="252" width="150" height="34" rx="17" fill="#22D3EE" fill-opacity="0.12" stroke="#22D3EE" stroke-opacity="0.45" stroke-width="1"/>
-    <text x="252" y="274" fill="#7DD3FC">&#9679; Learn.</text>
-
-    <!-- pill 2 -->
-    <rect x="392" y="252" width="150" height="34" rx="17" fill="#A855F7" fill-opacity="0.12" stroke="#A855F7" stroke-opacity="0.45" stroke-width="1"/>
-    <text x="414" y="274" fill="#C4A5F7">&#9679; Hack.</text>
-
-    <!-- pill 3 -->
-    <rect x="554" y="252" width="150" height="34" rx="17" fill="#22C55E" fill-opacity="0.12" stroke="#22C55E" stroke-opacity="0.45" stroke-width="1"/>
-    <text x="576" y="274" fill="#86EFAC">&#9679; Defend.</text>
-  </g>
-
-  <!-- ===== right: floating stat tiles ===== -->
+  <!-- ===== highlight rows (glass cards, like 21st highlight items) ===== -->
   <g>
-    <!-- tile 1 -->
-    <rect x="790" y="96" width="168" height="92" rx="18" fill="#FFFFFF" fill-opacity="0.055" stroke="#7DD3FC" stroke-opacity="0.28" stroke-width="1.1"/>
-    <text x="814" y="132" font-family="Consolas, Menlo, monospace" font-size="30" font-weight="700" fill="#7DD3FC" filter="url(#neon)">8</text>
-    <text x="814" y="158" font-family="Segoe UI, Arial, sans-serif" font-size="12.5" letter-spacing="1.4" fill="#94A3B8">REPOSITORIES</text>
+    <!-- row 1 -->
+    <rect x="220" y="194" width="404" height="46" rx="14" fill="#FFFFFF" fill-opacity="0.035" stroke="#FFFFFF" stroke-opacity="0.08" stroke-width="1"/>
+    <circle cx="242" cy="217" r="4" fill="#38BDF8"/>
+    <text x="258" y="213" font-family="Segoe UI, Arial, sans-serif" font-size="11" font-weight="700" letter-spacing="1.3" fill="#94A3B8">MISSION</text>
+    <text x="258" y="229" font-family="Segoe UI, Arial, sans-serif" font-size="13" fill="#E2E8F0">Become a Penetration Tester</text>
 
-    <!-- tile 2 -->
-    <rect x="974" y="96" width="168" height="92" rx="18" fill="#FFFFFF" fill-opacity="0.055" stroke="#A855F7" stroke-opacity="0.28" stroke-width="1.1"/>
-    <text x="998" y="132" font-family="Consolas, Menlo, monospace" font-size="30" font-weight="700" fill="#C4A5F7" filter="url(#neon)">20</text>
-    <text x="998" y="158" font-family="Segoe UI, Arial, sans-serif" font-size="12.5" letter-spacing="1.4" fill="#94A3B8">COMMITS</text>
+    <!-- row 2 -->
+    <rect x="220" y="248" width="404" height="46" rx="14" fill="#FFFFFF" fill-opacity="0.035" stroke="#FFFFFF" stroke-opacity="0.08" stroke-width="1"/>
+    <circle cx="242" cy="271" r="4" fill="#8B5CF6"/>
+    <text x="258" y="267" font-family="Segoe UI, Arial, sans-serif" font-size="11" font-weight="700" letter-spacing="1.3" fill="#94A3B8">FOCUS</text>
+    <text x="258" y="283" font-family="Segoe UI, Arial, sans-serif" font-size="13" fill="#E2E8F0">Pentesting · CTF · Network Security</text>
 
-    <!-- tile 3 -->
-    <rect x="790" y="204" width="352" height="92" rx="18" fill="#FFFFFF" fill-opacity="0.055" stroke="#22D3EE" stroke-opacity="0.22" stroke-width="1.1"/>
-    <text x="814" y="238" font-family="Segoe UI, Arial, sans-serif" font-size="12.5" letter-spacing="1.4" fill="#94A3B8">MISSION</text>
-    <text x="814" y="266" font-family="Consolas, Menlo, monospace" font-size="19" font-weight="600" fill="#E2E8F0">Become a Penetration Tester</text>
-    <text x="814" y="286" font-family="Consolas, Menlo, monospace" font-size="12.5" fill="#64748B">$ sudo apt install success</text>
-    <rect x="1052" y="272" width="9" height="16" fill="#22D3EE">
-      <animate attributeName="opacity" values="1;1;0;0" dur="1.2s" repeatCount="indefinite"/>
-    </rect>
+    <!-- row 3 -->
+    <rect x="220" y="302" width="404" height="46" rx="14" fill="#FFFFFF" fill-opacity="0.035" stroke="#FFFFFF" stroke-opacity="0.08" stroke-width="1"/>
+    <circle cx="242" cy="325" r="4" fill="#22C55E"/>
+    <text x="258" y="321" font-family="Segoe UI, Arial, sans-serif" font-size="11" font-weight="700" letter-spacing="1.3" fill="#94A3B8">CREED</text>
+    <text x="258" y="337" font-family="Segoe UI, Arial, sans-serif" font-size="13" fill="#E2E8F0">Learn. Hack. Defend.</text>
   </g>
 
-  <!-- corner accents -->
-  <path d="M30 92 V54 a24 24 0 0 1 24 -24 h38" fill="none" stroke="#22D3EE" stroke-opacity="0.55" stroke-width="2.2" stroke-linecap="round"/>
-  <path d="M1170 328 v38 a24 24 0 0 1 -24 24 h-38" fill="none" stroke="#A855F7" stroke-opacity="0.55" stroke-width="2.2" stroke-linecap="round"/>
+  <!-- ===== right column: stat tiles ===== -->
+  <g>
+    <!-- tile A -->
+    <rect x="664" y="194" width="236" height="72" rx="16" fill="#FFFFFF" fill-opacity="0.045" stroke="#FFFFFF" stroke-opacity="0.09" stroke-width="1"/>
+    <text x="688" y="228" font-family="Segoe UI, Arial, sans-serif" font-size="10.5" font-weight="700" letter-spacing="1.5" fill="#64748B">REPOSITORIES</text>
+    <text x="688" y="252" font-family="Consolas, Menlo, monospace" font-size="24" font-weight="700" fill="#E2E8F0" filter="url(#glowSoft)">08</text>
+    <rect x="742" y="236" width="34" height="4" rx="2" fill="#FFFFFF" fill-opacity="0.10"/>
+    <rect x="742" y="236" width="34" height="4" rx="2" fill="url(#barGrad)"/>
+
+    <!-- tile B -->
+    <rect x="916" y="194" width="236" height="72" rx="16" fill="#FFFFFF" fill-opacity="0.045" stroke="#FFFFFF" stroke-opacity="0.09" stroke-width="1"/>
+    <text x="940" y="228" font-family="Segoe UI, Arial, sans-serif" font-size="10.5" font-weight="700" letter-spacing="1.5" fill="#64748B">COMMITS</text>
+    <text x="940" y="252" font-family="Consolas, Menlo, monospace" font-size="24" font-weight="700" fill="#E2E8F0" filter="url(#glowSoft)">20</text>
+    <rect x="994" y="236" width="34" height="4" rx="2" fill="#FFFFFF" fill-opacity="0.10"/>
+    <rect x="994" y="236" width="26" height="4" rx="2" fill="url(#barGrad)"/>
+
+    <!-- tile C: terminal -->
+    <rect x="664" y="280" width="488" height="68" rx="16" fill="#0A0C11" fill-opacity="0.72" stroke="#FFFFFF" stroke-opacity="0.08" stroke-width="1"/>
+    <text x="688" y="306" font-family="Consolas, Menlo, monospace" font-size="12.5" fill="#22C55E">danu@kali</text>
+    <text x="770" y="306" font-family="Consolas, Menlo, monospace" font-size="12.5" fill="#64748B">:~$</text>
+    <text x="800" y="306" font-family="Consolas, Menlo, monospace" font-size="12.5" fill="#CBD5E1">sudo apt install success</text>
+    <rect x="984" y="295" width="7" height="13" fill="#22C55E">
+      <animate attributeName="opacity" values="1;1;0;0" dur="1.15s" repeatCount="indefinite"/>
+    </rect>
+    <text x="688" y="330" font-family="Segoe UI, Arial, sans-serif" font-size="11.5" fill="#475569">Open to internship · PKL · collaboration</text>
+
+    <!-- small social dots -->
+    <g opacity="0.85">
+      <circle cx="1064" cy="322" r="14" fill="#FFFFFF" fill-opacity="0.05" stroke="#FFFFFF" stroke-opacity="0.10" stroke-width="1"/>
+      <circle cx="1098" cy="322" r="14" fill="#FFFFFF" fill-opacity="0.05" stroke="#FFFFFF" stroke-opacity="0.10" stroke-width="1"/>
+      <circle cx="1132" cy="322" r="14" fill="#FFFFFF" fill-opacity="0.05" stroke="#FFFFFF" stroke-opacity="0.10" stroke-width="1"/>
+      <!-- mail glyph -->
+      <path d="M1058 317 h12 v10 h-12 z" fill="none" stroke="#7DD3FC" stroke-width="1.3"/>
+      <path d="M1058 317 l6 5 l6 -5" fill="none" stroke="#7DD3FC" stroke-width="1.3"/>
+      <!-- code glyph -->
+      <path d="M1093 317 l-4 5 l4 5 M1103 317 l4 5 l-4 5" fill="none" stroke="#A5B4FC" stroke-width="1.3" stroke-linecap="round"/>
+      <!-- link glyph -->
+      <path d="M1128 322 a4 4 0 0 1 4 -4 h3 M1136 327 a4 4 0 0 1 -4 4 h-3" fill="none" stroke="#C4B5FD" stroke-width="1.3" stroke-linecap="round"/>
+    </g>
+  </g>
+
+  <!-- top-left corner accent -->
+  <path d="M26 96 V56 a28 28 0 0 1 28 -28 h44" fill="none" stroke="#38BDF8" stroke-opacity="0.55" stroke-width="1.8" stroke-linecap="round"/>
+  <!-- bottom-right corner accent -->
+  <path d="M1174 334 v40 a28 28 0 0 1 -28 28 h-44" fill="none" stroke="#8B5CF6" stroke-opacity="0.55" stroke-width="1.8" stroke-linecap="round"/>
 </svg>
